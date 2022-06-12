@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'map-project';
+  clicked(){
+    console.log('button clicked')
+  }
 }
