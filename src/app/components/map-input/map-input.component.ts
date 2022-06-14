@@ -12,7 +12,7 @@ export class MapInputComponent implements OnInit {
   constructor() {
     this.formControl=new FormControl()
    }
-
+   @Input()
   myValue:string='';
   @Input('type')
   type:string='text';
@@ -22,6 +22,9 @@ export class MapInputComponent implements OnInit {
   id:string='';
   @Input('myClass')
   myClass:string='';
+  @Input('placeholder')
+  placeholder:string='';
+
   @Input()
   formControl:FormControl;
 

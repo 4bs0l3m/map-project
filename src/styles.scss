@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+.loginCard{
+  max-width: 484px !important;
+  margin: auto !important;
+  margin-top: 12% !important;
+
+}
+body{
+  height: 100% !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+html, body {
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}

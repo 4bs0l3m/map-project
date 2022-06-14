@@ -1,3 +1,5 @@
+import { MapFormFieldComponent } from './components/map-form-field/map-form-field.component';
+import { MapCardComponent } from './components/map-card/map-card.component';
 import { MapButtonComponent } from './components/map-button/map-button.component';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,7 +13,9 @@ import { MapInputComponent } from './components/map-input/map-input.component';
   declarations: [
     AppComponent,
     MapInputComponent,
-    MapButtonComponent
+    MapButtonComponent,
+    MapCardComponent,
+    MapFormFieldComponent
   ],
   imports: [
     BrowserModule,

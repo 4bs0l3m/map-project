@@ -1,0 +1,7 @@
+<div [ngClass]="myClass">
+
+  <label for="{{fieldId}}" class="form-label">{{fieldText}}</label>
+  <ng-container  *ngTemplateOutlet="layoutTemplate; context:{}">
+
+  </ng-container>
+</div>
