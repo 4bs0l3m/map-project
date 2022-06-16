@@ -21,16 +21,17 @@ export class LoginComponent implements OnInit {
 
   }
   clicked(){
-    // localStorage.setItem('accessToken','true')
-    this.password
-    console.log('this.password :', this.password);
-    this.email
-    console.log('this.username :', this.email);
+    localStorage.setItem('accessToken','true')
+    if(this.password==="123456" && this.email==="mikro@mikro.com.tr"){
+      this._router.navigateByUrl('/')
+    }
   }
   changeEmail(value:string){
+  console.log('value --:', value);
     this.email=value;
   }
   changePassword(value:string){
+  console.log('value -:', value);
     this.password=value;
   }
 }

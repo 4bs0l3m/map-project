@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { UserListComponent } from './pages/user-list/user-list.component';
 import { AuthGuard } from './auth/guards/auth-guard';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AuthGuard } from './auth/guards/auth-guard';
     MapCardComponent,
     MapFormFieldComponent,
     LoginComponent,
+    ForgotPasswordComponent,
     MapDefaultLogoComponent,
     MapUserListItemComponent,
     MapUserListComponent,

@@ -12,18 +12,18 @@
       <app-map-form-field fieldId="email" fieldText="Email" myClass="mt-5" >
         <ng-template>
 
-          <app-map-input id="email" [myValue]="email" name="email" myClass="form-control bg-light" placeholder="Email Adresinizi Giriniz!" type="email"></app-map-input>
+          <app-map-input id="email" (valueChange)="changeEmail($event)" [myValue]="email" name="email" myClass="form-control bg-light" placeholder="Email Adresinizi Giriniz!" type="email"></app-map-input>
         </ng-template>
       </app-map-form-field>
       <app-map-form-field myClass="mt-3" fieldId="password" fieldText="Şifre">
         <ng-template>
 
-          <app-map-input id="password" [myValue]="password" name="password" myClass="form-control bg-light" placeholder="Parolanızı Giriniz!" type="password"></app-map-input>
+          <app-map-input id="password" (valueChange)="changePassword($event)" [myValue]="password" name="password" myClass="form-control bg-light" placeholder="Parolanızı Giriniz!" type="password"></app-map-input>
         </ng-template>
       </app-map-form-field>
-      <p class="mt-4"><a href="#" class="text-primary float-end">Şifremi Unuttum</a></p>
+      <p class="mt-4"><a routerLink="/forgot" class="text-primary float-end">Şifremi Unuttum</a></p>
 
-      <app-map-button id="dsa" name="dfsdf" text="Giriş Yap" (clickEvent)="clicked()" myClass="btn btn-primary w-100 mt-4"></app-map-button>
+      <app-map-button id="loginButton" name="loginButton" text="Giriş Yap" (clickEvent)="clicked()" myClass="btn btn-primary w-100 mt-4"></app-map-button>
     </ng-template>
   </app-map-card>
 </div>
