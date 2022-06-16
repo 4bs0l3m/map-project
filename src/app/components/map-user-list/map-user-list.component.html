@@ -1,0 +1,25 @@
+<div class="row">
+
+  <ul class="list-group">
+
+    <li class="list-group-item  border-0" *ngFor="let item of userList">
+      <div class="col-3 d-flex float-start h-100 align-items-center">
+        <img src={{item.picture}} width="50px" height="50px" alt="..." class="shadow-sm  rounded-circle ">
+
+    </div>
+    <div class="col-9 float-end">
+      <button class="p-0 m-0 d-block btn btn-link" >{{item.title}} {{item.firstName}} {{item.lastName}} </button>
+      <small class="p-0 m-0 d-block text-muted" >Email: enesozer.f@gmail.com</small>
+      <small class="p-0 m-0 d-block text-muted" >Phone: 0555221445</small>
+    </div>
+  </li>
+  <li class="list-group-item  border-0" >
+    <div class="col-12  d-flex">
+
+      <button class="p-0 m-0 d-block btn btn-link"  (click)="getMoreUser()">Daha Fazla Yükle </button>
+    </div>
+  </li>
+
+
+</ul>
+</div>

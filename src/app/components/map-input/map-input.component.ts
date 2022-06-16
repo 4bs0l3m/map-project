@@ -1,11 +1,12 @@
-import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Event } from '@angular/router';
 
 @Component({
   selector: 'app-map-input',
   templateUrl: './map-input.component.html',
-  styleUrls: ['./map-input.component.scss']
+  styleUrls: ['./map-input.component.scss'],
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class MapInputComponent implements OnInit {
 
