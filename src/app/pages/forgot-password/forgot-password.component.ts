@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class ForgotPasswordComponent implements OnInit {
 
-  constructor(private _formBuilder: FormBuilder,private _router: Router) {
+  constructor(private _router: Router) {
 
   }
   email:string="";
@@ -20,7 +19,7 @@ export class ForgotPasswordComponent implements OnInit {
     // Create the form
 
   }
-  clicked(){
+  onForgot(){
     // localStorage.setItem('accessToken','true')
     this._router.navigateByUrl('/login')
   }

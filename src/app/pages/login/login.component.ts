@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private _formBuilder: FormBuilder,private _router: Router) {
+  constructor(private _router: Router) {
 
   }
   email:string="";
@@ -20,7 +19,7 @@ export class LoginComponent implements OnInit {
     // Create the form
 
   }
-  clicked(){
+  onLogin(){
     localStorage.setItem('accessToken','true')
     if(this.password==="123456" && this.email==="mikro@mikro.com.tr"){
       this._router.navigateByUrl('/')

@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { Event } from '@angular/router';
+
 
 @Component({
   selector: 'app-map-input',
@@ -11,7 +10,6 @@ import { Event } from '@angular/router';
 export class MapInputComponent implements OnInit {
 
   constructor() {
-    this.formControl=new FormControl()
    }
    @Input()
   myValue:string='';
@@ -26,8 +24,7 @@ export class MapInputComponent implements OnInit {
   @Input('placeholder')
   placeholder:string='';
 
-  @Input()
-  formControl:FormControl;
+
 
   @Output()
   valueChange:EventEmitter<any>=new EventEmitter<any>();

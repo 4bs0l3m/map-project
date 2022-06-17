@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { UserListComponent } from './user-list.component';
+import { UserService } from 'src/app/services/user.service';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('UserListComponent', () => {
   let component: UserListComponent;
@@ -11,7 +13,12 @@ describe('UserListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UserListComponent ]
+      imports: [
+        RouterTestingModule
+
+      ],
+      declarations: [ UserListComponent ],
+      providers:[UserService]
     })
     .compileComponents();
   }));
